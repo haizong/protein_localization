@@ -30,7 +30,7 @@ list_good = {};
 list_bad = {};
 for i = 1:length(Cell_data);
     if ~Cell_data{i}.is_bad;
-        % pr_loc_summary 
+        % call function pr_loc_summary 
         pr_loc_summary(Cell_data{i}); 
         list_good = [list_good, Cell_data{i}.raw_file(end-3:end-1)];
     else
